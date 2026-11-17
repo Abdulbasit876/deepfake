@@ -20,8 +20,10 @@ export function useAnalysisSimulation(targetDuration = 4000) {
     }, 100);
 
     return () => clearInterval(interval);
+
   }, [targetDuration]);
 
   return { progress, isCompleted };
 }
+
 
